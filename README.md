@@ -86,7 +86,7 @@ something that had no blah would be a list.*
 ## Dicts
 A dictionary like Python or Ruby. Simple key/value pairs.
 ```
-x = {"one": 1, "two": 2, "three", "We're really doing it Harry!"}
+x = {"one": 1, "two": 2, "three": "We're really doing it Harry!"}
 x['one']
 ```
 *This will be 2 part. We'll need to use the dicts from my R package (probably?) and 
@@ -97,7 +97,7 @@ of {} anyways.*
 Slightly more sugary function definition. Also need to figure out what `...` does
 and then make it easier to use.
 ```
-func hello():
+function hello():
   return "Hello, Greg!"
 ```
 *Grammar based. Maybe `def` instead of `func`?*
@@ -106,13 +106,17 @@ func hello():
 More sane class structures. Allow users to define classes with properties, 
 initializers, etc.
 ```
-class MyObject(object):
-  func init(self, something):
+class MyObject:
+  function init(something):
     self.something = something
-  func equals(self, aMyObject):
+  function equals(aMyObject):
     return self.something==aMyObject.something
-  func hello(self, name):
+  function hello(name):
     print("Hello!", name)
+
+class MyOtherObject(MyObject):
+  function say_what():
+    print("say what!?!")
 ```
 *This could be tricky. We might have to convert each of these into the shitty R 
 Reference Classes. Largely this will need to be done via the grammar with a lot of
@@ -128,7 +132,7 @@ myObj = MyObject("something wicked")
 ## Docstrings
 Docstring support like Python for functions and classes.
 ```
-func hello(somebody):
+function hello(somebody):
   """
   Says hello to somebody
 
