@@ -25,6 +25,12 @@ df[, ['x', 'y']]
 df[x > 100, ['x', 'y']]
 ```
 
+Ability to slice with or without begining/ending index
+```
+df[1:,]
+df[:10,]
+```
+
 Negative Indexing
 ```
 df[-10:-1,]
