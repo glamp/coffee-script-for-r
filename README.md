@@ -1,6 +1,8 @@
 *NOTE: This is just as spec. If you're interested in working on this with me,
 email me at lamp.greg@gmail.com*
-# An unnamed spec for a language that makes R more familiar looking
+
+# A spec for an unnamed language that makes R more familiar looking
+
 ## Coffee-Script for R
 A language that allows you to take advantage of the vastness of R but that
 makes the syntax a little bit easier to stomach.
